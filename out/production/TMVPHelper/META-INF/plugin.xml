@@ -1,0 +1,39 @@
+<idea-plugin version="2">
+  <id>com.z2wenfa.tmvphelper.plugin.id</id>
+  <name>TMVPHelper</name>
+  <version>1.0</version>
+  <vendor email="lxlfpeng@163.com" url="">dapeng</vendor>
+
+<!--  <description><![CDATA[-->
+<!--      Enter short description for your plugin here.<br>-->
+<!--      <em>most HTML tags may be used</em>-->
+<!--    ]]></description>-->
+
+<!--  <change-notes><![CDATA[-->
+<!--      Add change notes here.<br>-->
+<!--      <em>most HTML tags may be used</em>-->
+<!--    ]]>-->
+<!--  </change-notes>-->
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="MVPHelperAction.MVPHelperAction" class="pengge.MVPHelperAction" text="TMVPHelper"
+            description="MVPHelperAction.MVPHelperAction">
+      <add-to-group group-id="GenerateGroup" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
